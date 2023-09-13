@@ -23,3 +23,4 @@ Route::get('/get-pdf', function () {
     return view('pdf');
 });
 Route::post('/generate-pdf', [PdfController::class, 'generatePdf']);
+Route::get('pdf', [PdfController::class, 'index']);
